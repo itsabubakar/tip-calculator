@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Tip calculator app</title>
+
+</head>
+<body>
+  <div class="outer-conc">
+    <div class="logo">
+    <img src="./images/logo.svg" alt="" srcset="">
+    </div>
+    
+    <div class="inner-conc">
+      <div class="first-conc conc">
+        <div class="bill-conc">
+          <h4>Bill</h4>
+          <div class="output bill-output">
+            <div class="icon"><img src="./images/icon-dollar.svg" alt=""></div>
+            <input type="number" class="value" placeholder="142" data-bill></input>
+          </div>
+        </div>
+
+        <div class="select-tip">
+          <h4>Select tip %</h4>
+          <div class="buttons">
+            <button data-percentages class="tip-value" value="5">5%</button>
+            <button data-percentages class="tip-value" value="10">10%</button>
+            <button data-percentages class="tip-value" value="15">15%</button>
+            <button data-percentages class="tip-value" value="25">25%</button>
+            <button data-percentages class="tip-value" value="50">50%</button>
+            <form action="submit" id="form"><input data-custom type="number" class="tip-value custom" placeholder="Custom"></input></form>
+            
+          </div>
+        </div>
+
+        <div class="people-number">
+          <div class="people-info">
+            <h4>Number of People</h4>
+          <p span class="hidden">Can't be zero</p>
+          </div>
+          
+          <div class="output people-output">
+            <div class="icon"><img src="./images/icon-person.svg" alt=""></div>
+            <input class="value" placeholder="0" data-people type="number"></input>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="second-conc conc">
+        <div class="wrapper">
+          <div class="tip-amount">
+
+
+          <div class="header-text">
+
+            <div class="tip-info">
+           <h3>Tip Amount</h3>
+            <p>/ person</p>
+            </div>
+
+            <div class="amount">
+              $<span data-total-tip>0.00</span>
+            </div>
+          </div>
+
+          <div class="header-text">
+            
+            <div class="tip-info">
+           <h3>Total</h3>
+            <p>/ person</p>
+            </div>
+
+            <div class="amount" data-total-person>
+              $<span data-total-amount>0.00</span>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="reset">
+          <button class="reset-btn" data-reset>Reset</button>
+        </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
