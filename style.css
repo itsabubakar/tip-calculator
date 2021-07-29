@@ -216,7 +216,7 @@ form {
     display: inline-block;
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 560px) {
 
     .outer-conc {
         margin: 0;
