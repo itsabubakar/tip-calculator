@@ -47,7 +47,7 @@ body {
 .inner-conc {
     border-radius: 15px;
     /* width: 400px; */
-    max-height: 400px; 
+    /* max-height: 400px;  */
     background-color: var(--white);
     display: flex;
     justify-content: space-between;
